@@ -34912,10 +34912,10 @@ __webpack_require__(84);
           onSuccess = form.dataAttr('on-success', null),
           onError   = form.dataAttr('on-error', null);
 
-      form.on('submit', function(e) {
+      form.on('submit', function(e,token) {
         e.preventDefault();
         e.stopPropagation();
-
+		alert(token);
         form.children('.alert-danger').remove();
 
         form.find('[required]').each(function() {
