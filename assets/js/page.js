@@ -34915,7 +34915,7 @@ __webpack_require__(84);
       form.on('submit', function(e,token) {
         e.preventDefault();
         e.stopPropagation();
-		alert(token);
+		
         form.children('.alert-danger').remove();
 
         form.find('[required]').each(function() {
@@ -34957,27 +34957,33 @@ __webpack_require__(84);
           return false;
         }
 
+		//e.preventDefault();
+		e.preventDefault();
+        /*grecaptcha.ready(function() {
+          grecaptcha.execute('6LfHzP8qAAAAAKLNOqE8IlhAlv7aaw3UmVbdw1Un', {action: 'submit'}).then(function(token) {
+			alert("jkl");
+              // Add your logic to submit to your backend server here.
+          });
+        });
+        
+
+		
+		return false;*/
         $.ajax({
           type: "POST",
-          url: form.attr('action'),
-          data: form.serializeArray(),
+          url: "https://apis.deepermind.ai/nucontact/",
+          data: {
+			name:$("#name").val(),
+			email:$("#email").val(),
+			message:$("#message").val()
+		  },
         })
         .done( function( data ) {
-          var response = $.parseJSON( data );
-          if ( 'success' == response.status ) {
-            form.find('.alert-success').fadeIn(1000);
-            form.find(':input').val('');
-            if ( onSuccess !== null ) {
-              window[onSuccess]();
-            }
-          }
-          else {
-            form.prepend('<div class="alert alert-danger">'+ response.message +'</div>');
-            console.log( response.reason );
-            if ( onError !== null ) {
-              window[onError](response.reason);
-            }
-          }
+			form.find('.alert-success').fadeIn(1000);
+			form.find(':input').val('');
+			setTimeout(function(){
+				form.find('.alert-success').fadeOut(1000);
+			},1000)
         });
 
         return false;
