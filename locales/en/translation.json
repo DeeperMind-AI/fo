@@ -1,0 +1,162 @@
+{
+  "layout":{
+    "topbar":{
+      "sma_menu":{
+        "mnu1":"Terms",
+        "mnu2":"Policy",
+        "mnu3":"Blog"
+      },
+      "lang_menu":{
+        "mnu1":"French",
+        "mnu2":"English",
+        "mnu3":"Spanish"
+      },
+      "try_button":"Try DeeperMind BETA version for FREE"
+    },
+    "main_menu":{
+      "mnu1":"Home",
+      "mnu2":"Features",
+      "mnu3":"Contact",
+      "mnu4":"Blog"
+    }
+  },
+  "index": {
+    "header": {
+      "title": "Your AI solution for intelligent content management",
+      "subtitle": "Store, index and explore your high-volume documents with AI for powerful searches, instant summaries and in-depth analysis.",
+      "btbetalink": "Try DeeperMind BETA version for FREE",
+      "btreadmore": "Learn more"
+    },
+    "section_smallitems": {
+      "b1":{
+        "title":"Secure document storage",
+        "description":"High-performance storage space for your high-volume documents, accessible at any time and from any device."
+      },
+      "b2":{
+        "title":"Automatic indexing",
+        "description":"Organize your files efficiently, thanks to intelligent indexing for fast, precise document searches."
+      },
+      "b3":{
+        "title":"Advanced search by AI",
+        "description":"Use artificial intelligence to perform contextual and relevant searches, even on large datasets."
+      },
+      "b4":{
+        "title":"Creation of meta-analyses",
+        "description":"AI automatically generates meta-analyses based on your documents, providing summaries and key insights in the blink of an eye."
+      },
+      "b5":{
+        "title":"Lost data recovery",
+        "description":"Thanks to powerful algorithms, you can retrieve missing or hard-to-access information from your extensive archives."
+      },
+      "b6":{
+        "title":"Intelligent data summary",
+        "description":"The AI tool summarizes your long, complex documents for quick comprehension, while retaining the essential information."
+      }
+    },
+    "section_bigitems": {
+      "title":"More to Discover",
+      "b1":{
+        "title":"Dialogue with your documents",
+        "description":"Thanks to our intelligent chat functionality, you can interact directly with your files and get precise answers in a matter of seconds. The exchange history is kept, enabling you to track the progress of your searches and return to them at any time. Our solution optimizes access to information and facilitates document management. Simplify your workflow with a powerful, intuitive tool."
+      },
+      "b2":{
+        "title":"Store all types of data",
+        "description":"Our platform offers powerful APIs for mass indexing of all types of data, including associated metadata. Thanks to this advanced indexing, our system analyzes user queries in real time and automatically redirects them to the most relevant pages. Ideal for sites with large volumes of content, our solution enables intelligent, optimized navigation. Developers can easily integrate our APIs to enrich the user experience and automate access to information. Boost the relevance of your searches with high-performance indexing and orientation."
+      },
+      "b3":{
+        "title":"Coming soon",
+        "description":"Our content management and indexing platform is constantly evolving to offer even greater performance and functionality. New enhancements are under development to enrich the user experience and optimize access to information. By listening to our community, we integrate your feedback to shape future developments. Stay tuned: innovative functionalities will soon be available to meet your needs even better. Together, let's build the future of intelligent content management!"
+      }
+    },
+    "call_band": {
+      "text":"Want a bite? You're in the right place!",
+      "button_text":"Take a test drive"
+    },
+    "contact": {
+      "title":"Let's Get In Touch",
+      "name":"Your name",
+      "email":"Your email address",
+      "message":"Your message",
+      "send":"Send",
+      "sentMessage":"We received your message and will contact you back soon."
+    }
+  },
+  "blog": {
+    "title":"Blog",
+    "subtitle":"Read and get updated on use and progress",
+    "readmore":"Read more",
+    "blogs":{
+      "b1":{
+        "title":"Meet Your Smart Assistant: The AI That Supercharges Your Texts, Ideas… and Even Images!",
+        "p1":{
+          "line1":"Need to write a text, summarize a document, clarify an idea — or even understand the content of an image?",
+          "line2":"Our AI-powered assistant is here to help, in just seconds and without any hassle."
+        },
+        "subtit1":"🧠 What is it?",
+        "p2":{
+          "line1":"It’s a smart assistant that can read, understand, summarize, and even chat with you like a real conversation partner.",
+          "line2":"And it doesn’t stop at text — it can analyze images and even help you",
+          "line3":"build your own intelligent chatbot",
+          "line4":"with your own content."
+        },
+        "subtit2":"✍️ What can you do with it?",
+        "ul1":{
+          "li1":{
+            "line1":"Ask questions",
+            "line2":"on any topic and get clear, accurate answers."
+          },
+          "li2":{
+            "line1":"Automatically summarize",
+            "line2":"long texts, documents, or even",
+            "line3":"images",
+            "line4":"with text or visual information."
+          },
+          "li3":{
+            "line1":"Create content",
+            "line2":"like emails, blog posts, social media ideas, and more."
+          },
+          "li4":{
+            "line1":"Add your own content",
+            "line2":"(text, documents, knowledge) so the AI can answer based on",
+            "line3":"your context",
+            "line4":"— perfect for building a",
+            "line5":"custom smart chatbot"
+          },
+          "li5":{
+            "line1":"Search through your documents",
+            "line2":"using a memory system that understands your data."
+          }
+        },
+        "subtit3":"👨‍💻 Who is it for?",
+        "p3":{
+          "line1":"Our tool is designed for",
+          "line2":"everyone",
+          "line3":"— professionals and individuals alike:",
+          "line4":"Students, teachers, creators, entrepreneurs, HR teams, assistants… anyone can benefit from it."
+        },
+        "subtit4":"🚀Why give it a try?",
+        "ul2":{
+          "li1":{
+            "line1":"Save time",
+            "line2":": no more hours spent writing, searching, or summarizing."
+          },
+          "li2":{
+            "line1":"All-in-one",
+            "line2":": work with text, images, and even your own knowledge base."
+          },
+          "li3":{
+            "line1":"Easy to use",
+            "line2":": no tech skills required."
+          },
+          "li4":{
+            "line1":"Free to start",
+            "line2":": explore all its features with no commitment."
+          }
+        },
+        "p4":{
+          "line1":"Try it now and see how AI can become your smartest work, creativity, and productivity partner."
+        }
+      }
+    }
+  }
+}

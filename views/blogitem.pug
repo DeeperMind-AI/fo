@@ -1,0 +1,71 @@
+extends layout
+
+block content
+  // Header
+  header#home.header.text-white.text-center.text-lg-left(style="background-color: #24292e;")
+    .container
+      .row
+        .col-md-8.mx-auto
+          h1=t("blog.blogs.b1.title")
+
+  main.main-content
+    #section-content.section
+      .container
+        .row
+          .col-lg-8.mx-auto
+            p.lead
+              =t("blog.blogs.b1.p1.line1")
+              =t("blog.blogs.b1.p1.line2")
+            h2=t("blog.blogs.b1.subtit1")
+            p
+              =t("blog.blogs.b1.p2.line1")
+              =t("blog.blogs.b1.p2.line2")
+              =t("blog.blogs.b1.p2.line3")
+              =t("blog.blogs.b1.p2.line4")
+              =t("blog.blogs.b1.p2.line5")
+            h2=t("blog.blogs.b1.subtit2")
+            ul
+              li
+                strong=t("blog.blogs.b1.ul1.li1.line1") + " "
+                =t("blog.blogs.b1.ul1.li1.line2")
+              li
+                strong=t("blog.blogs.b1.ul1.li2.line1") + " "
+                =t("blog.blogs.b1.ul1.li2.line2") + " "
+                strong=t("blog.blogs.b1.ul1.li2.line3") + " "
+                =t("blog.blogs.b1.ul1.li2.line4")
+              li
+                strong=t("blog.blogs.b1.ul1.li3.line1") + " "
+                =t("blog.blogs.b1.ul1.li3.line2")
+              li
+                strong=t("blog.blogs.b1.ul1.li4.line1") + " "
+                =t("blog.blogs.b1.ul1.li4.line2") + " "
+                strong=" " + t("blog.blogs.b1.ul1.li4.line3") +" "
+                =t("blog.blogs.b1.ul1.li4.line4") + " "
+                strong=t("blog.blogs.b1.ul1.li4.line5")
+                | .
+              li
+                strong=t("blog.blogs.b1.ul1.li5.line1") + " "
+                =t("blog.blogs.b1.ul1.li5.line2")
+            h2=t("blog.blogs.b1.subtit3")
+            p
+              =t("blog.blogs.b1.p3.line1") + " "
+              strong=t("blog.blogs.b1.p3.line2") + " "
+              =t("blog.blogs.b1.p3.line3")
+              br
+              =t("blog.blogs.b1.p3.line4")
+            h2=t("blog.blogs.b1.subtit4")
+            ul
+              li
+                strong=t("blog.blogs.b1.ul2.li1.line1") + " "
+                =t("blog.blogs.b1.ul2.li1.line2")
+              li
+                strong=t("blog.blogs.b1.ul2.li2.line1") + " "
+                =t("blog.blogs.b1.ul2.li2.line2")
+              li
+                strong=t("blog.blogs.b1.ul2.li3.line1") + " "
+                =t("blog.blogs.b1.ul2.li3.line2")
+              li
+                strong=t("blog.blogs.b1.ul2.li4.line1") + " "
+                =t("blog.blogs.b1.ul2.li4.line2")
+            p
+              strong=t("blog.blogs.b1.p4.line1")

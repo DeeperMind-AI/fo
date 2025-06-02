@@ -1,0 +1,117 @@
+extends layout
+
+block content
+  // Header
+  header#home.header.text-white.h-fullscreen.text-center.text-lg-left(style="background-color: #24292e")
+    canvas.constellation(data-color="rgba(255,255,255,0.8)")
+    .container
+      .row.align-items-center.h-100
+        .col-lg-6
+          h1=t('index.header.title')
+          p.lead.mt-5.mb-8=t('index.header.subtitle')
+          p.gap-xy
+            a.btn.btn-round.btn-outline-light.mw-150(href="#section-features")=t('index.header.btreadmore')
+            a.btn.btn-round.btn-light.mw-150(href="https://app.deepermind.ai", target="_blank")=t('index.header.btbetalink')
+        .col-lg-5.ml-auto
+          img.mt-5(style="opacity:0.9;", src="/assets/img/ai/hh.png", alt="img")
+  main.main-content
+    //FUNCTIONS
+    section.section
+      .container
+        .row.gap-y
+          .w-100
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-dark.mr-5
+                i.icon-lock
+              .media-body
+                h5 Secure document storage
+                p High-performance storage space for your high-volume documents, accessible at any time and from any device.
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-primary.mr-5
+                i.icon-layers
+              .media-body
+                h5 Automatic indexing
+                p Organize your files efficiently, thanks to intelligent indexing for fast, precise document searches.
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-info.mr-5
+                i.icon-genius
+              .media-body
+                h5 Advanced search by AI
+                p Use artificial intelligence to perform contextual and relevant searches, even on large datasets.
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-warning.mr-5
+                i.icon-bargraph
+              .media-body
+                h5 Creation of meta-analyses
+                p AI automatically generates meta-analyses based on your documents, providing summaries and key insights in the blink of an eye.
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-danger.mr-5
+                i.icon-recycle
+              .media-body
+                h5 Lost data recovery
+                p Thanks to powerful algorithms, you can retrieve missing or hard-to-access information from your extensive archives.
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-success.mr-5
+                i.icon-book-open
+              .media-body
+                h5 Intelligent data summary
+                p The AI tool summarizes your long, complex documents for quick comprehension, while retaining the essential information.
+    //CALL
+    section.section.py-7(style="background-color: #333")
+      .container
+        .row.gap-y.align-items-center
+          .col-md-9
+            h4.mb-0.text-white.text-center.text-md-left Want a bite? You&apos;re in the right place!
+          .col-md-3.text-center.text-md-right
+            a.btn.btn-lg.btn-round.btn-light(href="https://app.deepermind.ai", target="_blank") Take a test drive
+    section#section-features.section.bg-gray
+      .container
+        header.section-header
+          h2 More to Discover
+          //
+            <hr>
+            <p class="lead">We waited until we could do it right. Then we did! Instead of creating a carbon copy.</p>
+        .row.gap-y.align-items-center
+          .col-md-6.ml-auto
+            h4 Dialogue with your documents
+            p Thanks to our intelligent chat functionality, you can interact directly with your files and get precise answers in a matter of seconds. The exchange history is kept, enabling you to track the progress of your searches and return to them at any time. Our solution optimizes access to information and facilitates document management. Simplify your workflow with a powerful, intuitive tool.
+          .col-md-5.order-md-first
+            img.rounded-pill.shadow-2(style="opacity:0.8;", src="/assets/img/ai/2.jpeg", alt="...")
+        hr.my-8
+        .row.gap-y.align-items-center
+          .col-md-6.mr-auto
+            h4 Store all types of data
+            p Our platform offers powerful APIs for mass indexing of all types of data, including associated metadata. Thanks to this advanced indexing, our system analyzes user queries in real time and automatically redirects them to the most relevant pages. Ideal for sites with large volumes of content, our solution enables intelligent, optimized navigation. Developers can easily integrate our APIs to enrich the user experience and automate access to information. Boost the relevance of your searches with high-performance indexing and orientation.
+          .col-md-5
+            img.rounded-pill.shadow-2(style="opacity:0.8;", src="/assets/img/ai/1.png", alt="...")
+        hr.my-8
+        .row.gap-y.align-items-center
+          .col-md-6.ml-auto
+            h4 Coming soon
+            p Our content management and indexing platform is constantly evolving to offer even greater performance and functionality. New enhancements are under development to enrich the user experience and optimize access to information. By listening to our community, we integrate your feedback to shape future developments. Stay tuned: innovative functionalities will soon be available to meet your needs even better. Together, let&apos;s build the future of intelligent content management!
+          .col-md-5.order-md-first
+            img.rounded-pill.shadow-2(style="opacity:0.8;", src="/assets/img/ai/3.jpeg", alt="...")
+    section#section-contact.section.text-center
+      .container
+        h2.text-center Let&apos;s Get In Touch
+        br
+        br
+        .row
+          .col-12.col-lg-6.offset-lg-3
+            form.p-30.bg-gray.rounded(data-form="mailer")
+              .alert.alert-success(style="display:none;") We received your message and will contact you back soon.
+              .row
+                .form-group.col-12.col-md-6
+                  input#name.form-control.form-control-lg(type="text", name="name", placeholder="Your Name")
+                .form-group.col-12.col-md-6
+                  input#email.form-control.form-control-lg(type="email", name="email", placeholder="Your Email Address")
+              .form-group
+                textarea#message.form-control.form-control-lg(rows="4", placeholder="Your Message", name="message")
+              .text-center
+                button.btn.btn-lg.btn-primary(onclick="onclick()") Send

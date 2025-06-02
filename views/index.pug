@@ -1,0 +1,117 @@
+extends layout
+
+block content
+  // Header
+  header#home.header.text-white.h-fullscreen.text-center.text-lg-left(style="background-color: #24292e")
+    canvas.constellation(data-color="rgba(255,255,255,0.8)")
+    .container
+      .row.align-items-center.h-100
+        .col-lg-6
+          h1=t('index.header.title')
+          p.lead.mt-5.mb-8=t('index.header.subtitle')
+          p.gap-xy
+            a.btn.btn-round.btn-outline-light.mw-150(href="#section-features")=t('index.header.btreadmore')
+            a.btn.btn-round.btn-light.mw-150(href="https://app.deepermind.ai", target="_blank")=t('index.header.btbetalink')
+        .col-lg-5.ml-auto
+          img.mt-5(style="opacity:0.9;", src="/assets/img/ai/hh.png", alt="img")
+  main.main-content
+    //FUNCTIONS
+    section.section
+      .container
+        .row.gap-y
+          .w-100
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-dark.mr-5
+                i.icon-lock
+              .media-body
+                h5=t('index.section_smallitems.b1.title')
+                p=t('index.section_smallitems.b1.description')
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-primary.mr-5
+                i.icon-layers
+              .media-body
+                h5=t('index.section_smallitems.b2.title')
+                p=t('index.section_smallitems.b2.description')
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-info.mr-5
+                i.icon-genius
+              .media-body
+                h5=t('index.section_smallitems.b3.title')
+                p=t('index.section_smallitems.b3.description')
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-warning.mr-5
+                i.icon-bargraph
+              .media-body
+                h5=t('index.section_smallitems.b4.title')
+                p=t('index.section_smallitems.b4.description')
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-danger.mr-5
+                i.icon-recycle
+              .media-body
+                h5=t('index.section_smallitems.b5.title')
+                p=t('index.section_smallitems.b5.description')
+          .col-md-6.col-xl-4
+            .media
+              .lead-6.line-height-1.text-success.mr-5
+                i.icon-book-open
+              .media-body
+                h5=t('index.section_smallitems.b6.title')
+                p=t('index.section_smallitems.b6.description')
+    //CALL
+    section.section.py-7(style="background-color: #333")
+      .container
+        .row.gap-y.align-items-center
+          .col-md-9
+            h4.mb-0.text-white.text-center.text-md-left=t('index.call_band.text')
+          .col-md-3.text-center.text-md-right
+            a.btn.btn-lg.btn-round.btn-light(href="https://app.deepermind.ai", target="_blank")=t('index.call_band.button_text')
+    section#section-features.section.bg-gray
+      .container
+        header.section-header
+          h2=t('index.section_bigitems.title')
+          //
+            <hr>
+            <p class="lead">We waited until we could do it right. Then we did! Instead of creating a carbon copy.</p>
+        .row.gap-y.align-items-center
+          .col-md-6.ml-auto
+            h4=t('index.section_bigitems.b1.title')
+            p=t('index.section_bigitems.b1.description')
+          .col-md-5.order-md-first
+            img.rounded-pill.shadow-2(style="opacity:0.8;", src="/assets/img/ai/2.jpeg", alt="...")
+        hr.my-8
+        .row.gap-y.align-items-center
+          .col-md-6.mr-auto
+            h4=t('index.section_bigitems.b2.title')
+            p=t('index.section_bigitems.b2.description')
+          .col-md-5
+            img.rounded-pill.shadow-2(style="opacity:0.8;", src="/assets/img/ai/1.png", alt="...")
+        hr.my-8
+        .row.gap-y.align-items-center
+          .col-md-6.ml-auto
+            h4=t('index.section_bigitems.b3.title')
+            p=t('index.section_bigitems.b3.description')
+          .col-md-5.order-md-first
+            img.rounded-pill.shadow-2(style="opacity:0.8;", src="/assets/img/ai/3.jpeg", alt="...")
+    section#section-contact.section.text-center
+      .container
+        h2.text-center=t('index.contact.title')
+        br
+        br
+        .row
+          .col-12.col-lg-6.offset-lg-3
+            form.p-30.bg-gray.rounded(data-form="mailer")
+              .alert.alert-success(style="display:none;")=t('index.contact.sentMessage')
+              .row
+                .form-group.col-12.col-md-6
+                  input#name.form-control.form-control-lg(type="text", name="name", placeholder=t('index.contact.name'))
+                .form-group.col-12.col-md-6
+                  input#email.form-control.form-control-lg(type="email", name="email", placeholder=t('index.contact.email'))
+              .form-group
+                textarea#message.form-control.form-control-lg(rows="4", placeholder=t('index.contact.title'), name="message")
+              .text-center
+                button.btn.btn-lg.btn-primary(onclick="onclick()")=t('index.contact.send')

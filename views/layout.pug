@@ -1,0 +1,101 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        title DeeperMind - BETA
+        block styles
+            // Styles
+            link(href="/assets/css/page.min.css", rel="stylesheet")
+            link(href="/assets/css/style.css", rel="stylesheet")
+            // Favicons
+            link(rel="apple-touch-icon", href="/assets/img/apple-touch-icon.png")
+            link(rel="icon", href="/assets/img/favicon.png")
+            link(rel="alternate" hreflang="fr" href="https://deepermind.ai/fr/")
+            link(rel="alternate" hreflang="en" href="https://deepermind.ai/en/")
+    body
+        section.topbar.d-lg-flex.text-white.bg-transparent
+            .container.small-3
+                nav.nav
+                    //a.nav-link(href="#")=t('layout.topbar.sma_menu.mnu1')
+                    //a.nav-link(href="#")=t('layout.topbar.sma_menu.mnu2')
+                    a.nav-link(href="/"+lang+"/blog.html")=t('layout.topbar.sma_menu.mnu3')
+                .dropdown.mr-4
+                    case lang
+                        when "fr"
+                            span.dropdown-toggle(data-toggle="dropdown" aria-expanded="false")=t('layout.topbar.lang_menu.mnu1')     
+                        when "en"
+                            span.dropdown-toggle(data-toggle="dropdown" aria-expanded="false")=t('layout.topbar.lang_menu.mnu2')
+                    .dropdown-menu.dropdown-menu-right
+                        a.dropdown-item(href="/fr/"+page)=t('layout.topbar.lang_menu.mnu1')     
+                        a.dropdown-item(href="/en/"+page)=t('layout.topbar.lang_menu.mnu2')     
+        nav.navbar.navbar-expand-lg.navbar-light.navbar-stick-dark(data-navbar="smart")
+            .container
+                .navbar-left.mr-4
+                    button.navbar-toggler(type="button")
+                        span.navbar-toggler-icon
+                    a.navbar-brand(href="/"+lang+"/")
+                        img.logo-dark(src="/assets/img/custom/dmind_logo_dark.png", alt="logo")
+                        img.logo-light(src="/assets/img/custom/dmind_logo_light.png", alt="logo")
+                section.navbar-mobile
+                    nav.nav.nav-navbar.mr-auto
+                        a.nav-link.active(href="/"+lang+"/")=t('layout.main_menu.mnu1')
+                        a.nav-link(href="/"+lang+"/#section-features")=t('layout.main_menu.mnu2')
+                        //
+                        //a.nav-link(href="/"+lang+"/section-pricing") Pricing
+                        //a.nav-link(href="#section-pricing") Resources
+                        a.nav-link(href="/"+lang+"/#section-contact")=t('layout.main_menu.mnu3')
+                        //a.nav-link(href="/"+lang+"/"+"blog.html")=t('layout.main_menu.mnu4')
+                .d-none.d-stick-block
+                    // <a class="btn btn-sm btn-light ml-lg-5 mr-2" href="#">Login</a>
+                    a.btn.btn-sm.btn-success(href="https://app.deepermind.ai", target="_blank")=t('layout.topbar.try_button')
+        // /.navbar
+        block content
+
+        // Footer
+        footer.footer
+            .container
+                .row.gap-y.align-items-center
+                    .col-md-3.text-center.text-md-left
+                        a(href="/"+lang+"/")
+                            img.logo-dark(src="/assets/img/custom/dmind_logo_dark.png", height="50", alt="logo")
+                    .col-md-6
+                        .nav.nav-center
+                            a.nav-link(href="#home")=t('layout.main_menu.mnu1')
+                            a.nav-link(href="#section-features")=t('layout.main_menu.mnu2')
+                            // <a class="nav-link" href="#">Policy</a>
+                            a.nav-link(href="#section-contact")=t('layout.main_menu.mnu3')
+                            a.nav-link(href="/"+lang+"/blog.html")=t('layout.main_menu.mnu4')
+                    .col-6.col-lg-3.text-right.order-lg-last
+                        .social
+                            a.social-twitter(target="_blank", href="https://x.com/DeepermindAdm")
+                                i.fa.fa-twitter
+                            a.social-youtube(target="_blank", href="https://www.youtube.com/channel/UCYf_LSQxlQGYmXQ2RDIGEhA")
+                                i.fa.fa-youtube
+                            //
+                                <a class="social-facebook" href="https://www.facebook.com/thethemeio"><i class="fa fa-facebook"></i></a>
+                                <a class="social-twitter"  target="_blank" href="https://x.com/DeepermindAdm"><i class="fa fa-twitter"></i></a>
+                                <a class="social-instagram" href="https://www.instagram.com/thethemeio/"><i class="fa fa-instagram"></i></a>
+                                <a class="social-dribbble" href="https://dribbble.com/thethemeio"><i class="fa fa-dribbble"></i></a>
+                                <a class="social-youtube" href="https://dribbble.com/thethemeio"><i class="fa fa-youtube"></i></a>
+                    //
+                        <div class="col-md-3 text-center text-md-right">
+                        <small>© 2025 - DeeperMind. All rights reserved.</small>
+                        </div>
+        // /.footer
+
+
+        block scripts
+            // Google tag (gtag.js)
+            script(async, src="https://www.googletagmanager.com/gtag/js?id=G-V0D7TGJ44W")
+            script.
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-V0D7TGJ44W');
+                // Scripts
+            script(src="https://www.google.com/recaptcha/api.js?render=6LfHzP8qAAAAAKLNOqE8IlhAlv7aaw3UmVbdw1Un")
+            script(src="/assets/js/page.js")
+            script(src="/assets/js/script.js")

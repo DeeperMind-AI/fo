@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  // Header
+  header#home.header.text-white.text-center.text-lg-left(style="background-color: #24292e;")
+    .container
+      .row
+        .col-md-8.mx-auto
+          h1=t('blog.title')
+          p.lead-2.opacity-90.mt-6=t('blog.subtitle')
+  // /.header
+  <!-- Main Content -->
+  main.main-content
+      section.section.bg-gray.p-0
+        .container
+          .row
+            .col-md-10.col-xl-9.mx-auto
+              .card.hover-shadow-7.my-8
+                .row
+                  .col-md-12
+                    .p-7
+                      h4=t("blog.blogs.b1.title")
+                      a.small.ls-1(href="/"+lang+"/blog/meet_your_smart_assistant.html")=t("blog.readmore") 
+                        span.pl-1 ⟶
+

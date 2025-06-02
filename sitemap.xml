@@ -1,26 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Page d'accueil -->
   <url>
-    <loc>https://deepermind.ai/</loc>
-    <lastmod>2025-04-25</lastmod>
+    <loc>https://deepermind.ai/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://deepermind.ai/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deepermind.ai/en/" />
+    <lastmod>2025-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <!-- Page "Blog" -->
   <url>
-    <loc>https://deepermind.ai/blog.html</loc>
-    <lastmod>2025-04-25</lastmod>
+    <loc>https://deepermind.ai/fr/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://deepermind.ai/fr/blog.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deepermind.ai/en/blog.html" />
+    <lastmod>2025-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
+  <!-- Page "Blog" -->
   <url>
-    <loc>https://deepermind.ai/blog/meet_your_smart_assistant.html</loc>
-    <lastmod>2025-04-25</lastmod>
+    <loc>https://deepermind.ai/fr/blog/meet_your_smart_assistant.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://deepermind.ai/fr/blog/meet_your_smart_assistant.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://deepermind.ai/en/blog/meet_your_smart_assistant.html" />
+    <lastmod>2025-05-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

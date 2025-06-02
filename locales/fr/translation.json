@@ -1,0 +1,162 @@
+{
+  "layout": {
+    "topbar": {
+      "sma_menu": {
+        "mnu1": "Conditions",
+        "mnu2": "Politique",
+        "mnu3": "Blog"
+      },
+      "lang_menu": {
+        "mnu1": "Français",
+        "mnu2": "Anglais",
+        "mnu3": "Espagnol"
+      },
+      "try_button": "Essayez gratuitement la version BÊTA de DeeperMind"
+    },
+    "main_menu": {
+      "mnu1": "Accueil",
+      "mnu2": "Fonctionnalités",
+      "mnu3": "Contact",
+      "mnu4": "Blog"
+    }
+  },
+  "index": {
+    "header": {
+      "title": "Votre solution IA pour la gestion intelligente de contenu",
+      "subtitle": "Stockez, indexez et explorez vos documents volumineux avec l’IA pour des recherches puissantes, des résumés instantanés et une analyse approfondie.",
+      "btbetalink": "Essayez gratuitement la version BÊTA de DeeperMind",
+      "btreadmore": "En savoir plus"
+    },
+    "section_smallitems": {
+      "b1": {
+        "title": "Stockage sécurisé de documents",
+        "description": "Espace de stockage haute performance pour vos documents volumineux, accessible à tout moment et depuis n'importe quel appareil."
+      },
+      "b2": {
+        "title": "Indexation automatique",
+        "description": "Organisez efficacement vos fichiers grâce à une indexation intelligente pour des recherches rapides et précises."
+      },
+      "b3": {
+        "title": "Recherche avancée par IA",
+        "description": "Utilisez l’intelligence artificielle pour effectuer des recherches contextuelles et pertinentes, même sur de grands volumes de données."
+      },
+      "b4": {
+        "title": "Création de méta-analyses",
+        "description": "L’IA génère automatiquement des méta-analyses basées sur vos documents, offrant des résumés et des informations clés en un clin d'œil."
+      },
+      "b5": {
+        "title": "Récupération de données perdues",
+        "description": "Grâce à des algorithmes puissants, retrouvez les informations manquantes ou difficiles d’accès dans vos archives volumineuses."
+      },
+      "b6": {
+        "title": "Résumé intelligent des données",
+        "description": "L’outil IA résume vos documents longs et complexes pour une compréhension rapide, tout en conservant l’essentiel."
+      }
+    },
+    "section_bigitems": {
+      "title": "Encore plus à découvrir",
+      "b1": {
+        "title": "Dialoguez avec vos documents",
+        "description": "Grâce à notre fonctionnalité de chat intelligent, interagissez directement avec vos fichiers et obtenez des réponses précises en quelques secondes. L’historique des échanges est conservé, vous permettant de suivre vos recherches et d’y revenir à tout moment. Notre solution optimise l’accès à l’information et facilite la gestion documentaire. Simplifiez votre flux de travail avec un outil puissant et intuitif."
+      },
+      "b2": {
+        "title": "Stockez tous types de données",
+        "description": "Notre plateforme propose des API puissantes pour l’indexation massive de tous types de données, y compris les métadonnées associées. Grâce à cette indexation avancée, notre système analyse les requêtes des utilisateurs en temps réel et les redirige automatiquement vers les pages les plus pertinentes. Idéale pour les sites à fort contenu, notre solution permet une navigation intelligente et optimisée. Les développeurs peuvent facilement intégrer nos API pour enrichir l’expérience utilisateur et automatiser l’accès à l’information. Améliorez la pertinence de vos recherches grâce à une indexation et une orientation performantes."
+      },
+      "b3": {
+        "title": "Bientôt disponible",
+        "description": "Notre plateforme de gestion et d’indexation de contenu évolue en permanence pour offrir encore plus de performance et de fonctionnalités. De nouvelles améliorations sont en cours de développement pour enrichir l’expérience utilisateur et optimiser l’accès à l’information. À l’écoute de notre communauté, nous intégrons vos retours pour façonner les évolutions futures. Restez connectés : des fonctionnalités innovantes seront bientôt disponibles pour répondre encore mieux à vos besoins. Construisons ensemble l’avenir de la gestion intelligente de contenu !"
+      }
+    },
+    "call_band": {
+      "text": "Envie d’y goûter ? Vous êtes au bon endroit !",
+      "button_text": "Faites un essai"
+    },
+    "contact": {
+      "title": "Entrons en contact",
+      "name": "Votre nom",
+      "email": "Votre adresse email",
+      "message": "Votre message",
+      "send": "Envoyer",
+      "sentMessage": "Nous avons bien reçu votre message et vous contacterons bientôt."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Lisez et suivez l’actualité de l’outil",
+    "readmore": "Lire plus",
+    "blogs": {
+      "b1": {
+        "title": "Rencontrez votre assistant intelligent : l’IA qui booste vos textes, idées… et même vos images !",
+        "p1": {
+          "line1": "Besoin d’écrire un texte, résumer un document, clarifier une idée — ou même comprendre le contenu d’une image ?",
+          "line2": "Notre assistant propulsé par l’IA est là pour vous aider, en quelques secondes et sans effort."
+        },
+        "subtit1": "🧠 Qu’est-ce que c’est ?",
+        "p2": {
+          "line1": "C’est un assistant intelligent qui peut lire, comprendre, résumer et même discuter avec vous comme un véritable partenaire de conversation.",
+          "line2": "Et il ne s’arrête pas au texte — il peut analyser des images et même vous aider à",
+          "line3": "créer votre propre chatbot intelligent",
+          "line4": "avec vos propres contenus."
+        },
+        "subtit2": "✍️ Que pouvez-vous faire avec ?",
+        "ul1": {
+          "li1": {
+            "line1": "Poser des questions",
+            "line2": "sur n’importe quel sujet et obtenir des réponses claires et précises."
+          },
+          "li2": {
+            "line1": "Résumer automatiquement",
+            "line2": "des textes longs, des documents ou même",
+            "line3": "des images",
+            "line4": "avec des informations textuelles ou visuelles."
+          },
+          "li3": {
+            "line1": "Créer du contenu",
+            "line2": "comme des emails, articles de blog, idées pour les réseaux sociaux, et bien plus."
+          },
+          "li4": {
+            "line1": "Ajouter vos propres contenus",
+            "line2": "(textes, documents, connaissances) pour que l’IA réponde selon",
+            "line3": "votre contexte",
+            "line4": "— idéal pour créer un",
+            "line5": "chatbot intelligent personnalisé"
+          },
+          "li5": {
+            "line1": "Rechercher dans vos documents",
+            "line2": "grâce à un système mémoire qui comprend vos données."
+          }
+        },
+        "subtit3": "👨‍💻 Pour qui est-ce ?",
+        "p3": {
+          "line1": "Notre outil est conçu pour",
+          "line2": "tout le monde",
+          "line3": "— professionnels comme particuliers :",
+          "line4": "Étudiants, enseignants, créateurs, entrepreneurs, équipes RH, assistants… tout le monde peut en bénéficier."
+        },
+        "subtit4": "🚀 Pourquoi l’essayer ?",
+        "ul2": {
+          "li1": {
+            "line1": "Gagnez du temps",
+            "line2": ": plus besoin de passer des heures à écrire, chercher ou résumer."
+          },
+          "li2": {
+            "line1": "Tout-en-un",
+            "line2": ": travaillez avec des textes, des images et même votre propre base de connaissances."
+          },
+          "li3": {
+            "line1": "Facile à utiliser",
+            "line2": ": aucune compétence technique requise."
+          },
+          "li4": {
+            "line1": "Gratuit pour commencer",
+            "line2": ": explorez toutes les fonctionnalités sans engagement."
+          }
+        },
+        "p4": {
+          "line1": "Essayez-le maintenant et découvrez comment l’IA peut devenir votre meilleur partenaire de travail, de créativité et de productivité."
+        }
+      }
+    }
+  }
+}
